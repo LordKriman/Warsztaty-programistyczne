@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form example</title>
+</head>
+<body>
+  <div id="main">
+      <h1>Formularz rejestracyjny do Biblioteki Akademickiej</h1>
+      <form action="rejestracja.php" method="post enctype="multipart/form-data">
+          <fieldset>
+              <legend>Dane osobowe</legend>
+              <ol>
+                  <label for="imie">Imię:</label>
+                      <input type="text" id="imie" name="imie" required minlength="2" maxlength="50" placeholder="Wpisz imię" autofocus>
+                      <br><br>
+                      
+                  <labe for="nazwisko">Nazwisko:</label>
+                      <input type="text" id="nazwisko" name="nazwisko" required  maxlength="60" placeholder="Wpisz nazwisko">
+                      <br><br>
+                      
+                  <label for="email">Adres e-mail:</label>
+                      <input type="email" id="email" name="email" required multiple placeholder="adres@witryna.com">
+                      <br><br>
+                      
+                  <label for="tel">Numer telefonu:</label>
+                      <input type="tel" id="tel" name="tel" pattern="[0-9]{9}" placeholder="123456789">
+                      <br><br>
+                      
+                  <label for="date">Data urodzenia:</label>
+                      <input type="date" id="date" name="date" min="1900-01-01" max="2026-12-31">
+                      <br><br>
+                      
+                  <label for="plec">Płeć:</label>
+                      <input type="radio" id="women" name="plec" value="women">
+                      <label for="html">Kobieta</label>
+                      <input type="radio" id="men" name="plec" value="men">
+                      <label for="html">Mężczyzna</label>
+                      <input type="radio" id="other" name="plec" value="other">
+                      <label for="html">Inna</label>
+                    <br><br>
+                    
+                  <label for="pesel">Numer PESEL:</label>
+                      <input type="password" id="pesel" name="pesel" pattern="[0-9]{11}" autocomplete="off">
+                      <br><br>
+              </ol>
+          </fieldset>
+          
+          <fieldset>
+              <legend>Adres</legend>
+              <ol>
+                  <label for="adres">Ulica i numer:</label>
+                      <input type="text" id="adres" name="adres" required placeholder="np. ul.Kościuszki 2/3">
+                      <br><br>
+                      
+                  <label for="kod">Kod pocztowy:</label>
+                      <input type="text" id="kod" name="kod" pattern="[0-9]{2}-[0-9]{3}" placeholder="00-000">
+                      <br><br>
+                      
+                  <label for="miasto">Miasto:</label>
+                      <input type="text" id="miasto" name="miasto" list="miasta">
+                      <datalist id="miasta">
+                      <option value="Gdańsk">
+                      <option value="Gdańsk">
+                      <option value="Gdańsk">
+                      <option value="Gdańsk">
+                      <option value="Gdańsk">
+                      <option value="Gdańsk">
+                      </datalist>
+                      <br><br>
+                      
+                  <label for="kraj">Kraj:</label>
+                      <select id="kraj" name="kraj" required>
+                          <optgroup label="Europa">
+                              <option value="polska" selected>Polska</option>
+                              <option value="wegry">Węgry</option>
+                              <option value="czechy">Czechy</option>
+                              <option value="slowacja">Słowacja</option>
+                          </optgroup>
+                          <optgroup label="Azja">
+                              <option value="azerbejdzan">Azerbejdżan</option>
+                              <option value="mongolia">Mongolia</option>
+                              <option value="uzbekistan">Uzbekistan</option>
+                              <option value="kazachstan">Kazachstan</option>
+                          </optgroup>
+                          </select>
+                      <br><br>
+              </ol>
+          </fieldset>
+          
+          <fieldset>
+              <legend>Preferencje czytelnicze</legend>
+              <ol>
+                  <label for="wiedzmin">Wiedźmin</label>
+                      <input type="checkbox" id="wiedzmin" name="gatunek" value="wiedzmin">
+                  <label for="mango">Mango</label>
+                      <input type="checkbox" id="mango" name="gatunek" value="mango">
+                  <label for="fantasy">Minecraft</label>
+                      <input type="checkbox" id="minecraft" name="gatunek" value="minecraft">
+                  <label for="SteamWorld_dig">SteamWorld Dig</label>
+                      <input type="checkbox" id="SteamWorld_dig" name="gatunek" value="SteamWorld_dig">
+                  <label for="history">Historiografia</label>
+                      <input type="checkbox" id="history" name="gatunek" value="history">
+                  <label for="fallout">Fallout</label>
+                      <input type="checkbox" id="fallout" name="gatunek" value="fallout">
+                      <br><br>
+                  
+                  <label for="ksiazki">Liczba wypożyczanych książek miesięcznie:</label>
+                      <input type="number" id="ksiazki" min="1" max="20" value="3">
+                      <br><br>
+                      
+                  <label for="pora">Preferowana pora odwiedzin:</label>
+                      <input type="time" id="pora" min="07:00" max="22:00">
+                      <br><br>
+                  
+                  <label for="aktywnosc">Aktywność czytelnicza:</label>
+                      <input type="range" id="aktywnosc" min="0" max="10" step="1" oninput="wynik.value=this.value">
+                      <output id="wynik">5</output>
+                      <br><br>
+                      
+                  <label for="kolor">Ulubiony kolor okładki:</label>
+                      <input type="color" id="kolor" value="#3498db">
+                      <br><br>
+                  
+                  <label for="profil">Link do profilu czytelnika:</label>
+                      <input type="url" id="profil" placeholder="https://">
+                      <br><br>
+                      
+                  <label for="zdjecie">Wgranie zdjęcia legitymacyjnego:</label>
+                      <input type="file" id="zdjecie" accept="image/png, image/jpeg">
+                      <br><br>
+                  
+                  <label for="komentarz">Komentarz / uwagi:</label>
+                      <textarea rows="5" cols="50" maxlength="500" placeholder="Twoje uwagi..."></textarea>
+              </ol>
+          </fieldset>
+          <br>
+          <label for="wypelnienie">Wypełnienie profilu:</label>
+              <meter value="0.4" min="0" max="1" low="0.3" high="0.7" optimum="0.9"></meter>
+              <br><br>
+          
+          <label for="postep">Postęp weryfikacji konta:</label>
+              <progress value="25", max="100"></progress>
+              <br><br>
+          
+          <button type="submit">Zarejestruj się</button>
+          <button type="reset">Wyczyść formularz</button>
+      </form>
+  </div>
+</body>
+</html>
