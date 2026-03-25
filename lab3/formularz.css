@@ -1,0 +1,186 @@
+body{
+  font-family: Arial,Sans-Serif;
+  background-color: #f4f6f8;
+  color: black;
+}
+
+header{
+  background-color: #1e2b3b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1{
+  font-variant: small-caps;
+  text-shadow: 2px 2px 0 #19191a, 4px 4px 5px rgba(0,0,0,4);
+}
+
+header p{
+  font-style: italic;
+  color: #a7a7a8;
+}
+
+
+nav ol{
+  list-style: none;
+  color: #303030;
+  background: #d9dbde;
+  font-size: 15px;
+}
+
+nav li+li:before{
+  content: "→ ";
+}
+
+nav li:last-child{
+    font-weight: bold;
+}
+
+
+main{
+  width: 70%;
+  margin: auto;
+}
+
+fieldset{
+  border: 1px solid black;
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+legend{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+label{
+  display: block;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+#dane-osobowe{
+  background:  hsl(200, 50%, 95%);
+}
+
+#dane-osobowe legend{
+  color: #143f57;
+}
+
+#adres{
+  background: #f3f0ff;
+}
+
+#adres legend{
+  color: #221559;
+}
+
+#preferencje{
+  background: #f3fce1;
+}
+
+#preferencje legend{
+  font-style: italic;
+  font-variant: small-caps;
+  color: #145716;
+}
+
+
+input[type="text"]{
+  background: #f7e2a8;
+}
+
+input[type="email"]{
+  background: #f5f7a8;
+}
+
+input[type="tel"]{
+  background: #e2f7a8;
+}
+
+input[type="date"]{
+  background: #c7f7a8;
+}
+
+input[type="password"]{
+  background: #a8f7a8;
+}
+
+input[type="url"]{
+  background: #a8f7c0;
+}
+
+input[type="time"]{
+  background: #a8f7dd;
+}
+
+input[type="color"]{
+  background: #a8f1f7;
+}
+
+input[type="file"]{
+  background: #a8d6f7;
+}
+
+input[type="radio"] + label{
+  display: inline;
+  margin-right: 10px;
+}
+
+input[type="checkbox"] + label{
+  display: inline;
+  margin-right: 10px;
+}
+
+input[type="number"]{
+  background: #b6a8f7;
+}
+
+#pesel{
+  font-family: monospace ;
+  letter-spacing: 2px;
+}
+
+input:required{
+  border-left: 2px solid red;
+}
+
+
+button[type="submit"]{
+  background: #1e2b3b;
+  color: white;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+}
+
+button[type="reset"]{
+  background: #e3e3e3;
+  padding: 10px 20px;
+  color: #383838;
+}
+
+
+.info{
+  text-align: center;
+  font-style: italic;
+  color: #777;
+}
+
+.required{
+  color: red;
+  font-weight: bold;
+}
+
+footer{
+  background-color: #1e2b3b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a{
+  color: #c9eaf0;
+}
