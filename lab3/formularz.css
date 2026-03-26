@@ -13,7 +13,7 @@ header{
 
 header h1{
   font-variant: small-caps;
-  text-shadow: 2px 2px 0 #19191a, 4px 4px 5px rgba(0,0,0,4);
+  text-shadow: 2px 2px 0 #19191a, 4px 4px 5px rgba(0,0,0,0.4);
 }
 
 header p{

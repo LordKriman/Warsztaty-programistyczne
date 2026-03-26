@@ -1,0 +1,202 @@
+h1, h2, h3{
+  font-family: Calibri, sans-serif;
+}
+
+p{
+  font-family: "Times New Roman", serif;
+}
+
+header{
+  background-color: #1e2b3b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#top h1{
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #19191a, 4px 4px 0 #222, 6px 6px 6px rgba(0,0,0,0.4);
+  letter-spacing: 3px;
+}
+
+.nav-lista, .nav-lista ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-lista li{
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-lista > li {
+  display: inline-block;
+}
+
+.nav-lista > li + li {
+  margin-left: 20px;
+  border-left: 2px solid white;
+  padding-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+a[href^="http"] {
+  font-style: italic;
+  color: lightblue;
+}
+
+a[target="_blank"] {
+    text-decoration: underline;
+}
+
+.lead {
+  font-size:; 1.4em;
+  font-style: italic;
+  line-height: 1.6;
+  word-spacing: 4px;
+  color: rgba(0,0,0,0.6);
+  text-indent: 20px;
+}
+
+h2 {
+  color: #1e2b3b;
+  text-decoration: underline;
+}
+
+h2 + p {
+  text-indent: 20px;
+  color: gray;
+  word-spacing: 3px;
+}
+
+h2 ~ h2 {
+  font-size: 1.3em;
+  text-shadow: 1px 1px 2px gray;
+}
+
+blockquote{
+  background: hsl(57, 100%, 89%);
+  border: 2px solid orange;
+  padding: 10px;
+  font-style: italic;
+}
+
+blockquote > p {
+  margin: 0;
+}
+
+blockquote > p + p{
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+thead tr {
+  background: #1e2b3b;
+  color: white;
+  letter-spacing: 2px;
+  font-variant: small-caps;
+}
+
+thead tr + tr {
+  background: #0b1726;
+  color: white;
+  letter-spacing: 2px;
+  font-variant: small-caps;
+}
+
+tfoot {
+  background: white;
+  color: black;
+  font-style: italic;
+}
+
+img[alt] {
+  border: 2px solid #82431e;
+}
+
+img[usemap] {
+  border: 3px solid #8f2e15;
+}
+
+figure {
+  font-size: 0.9em;
+  font-style: italic;
+  opacity: 0.8;
+  text-align: center;
+}
+
+details > summary{
+  font-weight: bold;
+  color: darkblue;
+}
+
+details > dl {
+  word-spacing: 5px;
+  color: #345c75;
+}
+
+article + aside {
+  background: #f5f5f5; 
+}
+
+aside > section {
+  border-left: 3px solid darkblue;
+  padding-left: 10px;
+}
+
+aside > section + section {
+  border-left: 3px solid green;
+  padding-left: 10px;
+}
+
+aside h3 {
+  font-variant: small-caps;
+  color: black;
+}
+
+#aktualnosci ul {
+  list-style: square;
+}
+
+#aktualnosci a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+aside ol ul {
+    list-style: circle;
+    list-style-position: inside;
+}
+
+main > article {
+  background: white;
+}
+
+footer{
+  background-color: #1e2b3b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer small {
+  opacity: 0.5;
+}
+
+footer a[href^=mailto] {
+  color: #c9eaf0;
+}
+
+footer a[href^=tel] {
+  color: lightgreen;
+}
+
+footer a[href="#top"] {
+    color: orange;
+}
