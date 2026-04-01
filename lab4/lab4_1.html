@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ang">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="-Plain text-">
+        <meta name="author" content="Ja">
+        <title>Menadżer zadań</title>
+        <link href="menager.css" rel="stylesheet" type="text/css">
+        <noscript>Twoja przeglądarka ssie.</noscript>
+    </head>
+<body>
+<header>
+    <h2>Menadżer zadań</h2>
+</header>
+
+<aside class="sidebar">
+    <h2>Dodaj zadanie</h2>
+    <form>
+        <label for="title">Tytuł</label>
+        <input id="title" type="text" required>
+        
+        <label for="category">Kategoria</label>
+        <select id="category" required>
+            <option>Praca</option>
+            <option>Dom</option>
+            <option>Nauka</option>
+            <option>Zdrowie</option>
+            <option>Inne</option>
+        </select>
+
+        <label for="priority">Priorytet</label>
+        <select id="priority" required>
+            <option>Niski</option>
+            <option>Średni</option>
+            <option>Wysoki</option>
+        </select>
+        
+        <label for="due">Data wykonania</label>
+        <input id="due" type="date" required>
+        
+        <label for="description">Opis</label>
+        <textarea id="description"></textarea>
+        
+        <label for="status">Status</label>
+        <select id="status" required>
+            <option>do zrobienia</option>
+            <option>w trakcie</option>
+            <option>zakończone</option>
+        </select>
+        
+        <button type="submit">Dodaj zadanie</button>
+    </form>
+</aside>
+
+<main>
+    <section id="stats">
+        <div>Wszystkie: 6</div>
+        <div>Do zrobienia: 3</div>
+        <div>W trakcie: 2</div>
+        <div>Zakończone: 1</div>
+    </section>
+    
+    <section id="sort">
+        Sortuj:
+        <button class="active">Tytuł ↑</button>
+        <button>Priorytet</button>
+        <button>Data</button>
+        <button>Kategoria</button>
+    </section>
+    
+    
+    <section id="tasks">
+    <div class="task high">
+        <span class="level">Wysoki</span>
+        <h3>Kill</h3>
+        <p>Kategoria: Praca</p>
+        <p>Data: 07.04.2026</p>
+        <p>You know who.</p>
+        <span class="badge todo">Do zrobienia</span>
+    </div>
+    
+    <div class="task mid">
+        <span class="level">Średni</span>
+        <h3>Mapa</h3>
+        <p>Kategoria: Inne</p>
+        <p>Data: 30.06.2026</p>
+        <p>Duża, kolorowa.</p>
+        <span class="badge inpro">W trakcie</span>
+    </div>
+    
+    <div class="task low">
+        <span class="level">Niski</span>
+        <h3>Get sleep</h3>
+        <p>Kategoria: Zdrowie</p>
+        <p>Data: 09.04.2026</p>
+        <p>At least 14 hours.</p>
+        <span class="badge done">Zakończone</span>
+    </div>
+    
+        <div class="task high">
+        <span class="level">Wysoki</span>
+        <h3>Kill</h3>
+        <p>Kategoria: Praca</p>
+        <p>Data: 07.04.2026</p>
+        <p>You know who.</p>
+        <span class="badge todo">Do zrobienia</span>
+    </div>
+    
+    <div class="task mid">
+        <span class="level">Średni</span>
+        <h3>Mapa</h3>
+        <p>Kategoria: Inne</p>
+        <p>Data: 30.06.2026</p>
+        <p>Duża, kolorowa.</p>
+        <span class="badge inpro">W trakcie</span>
+    </div>
+    
+    <div class="task low">
+        <span class="level">Niski</span>
+        <h3>Get sleep</h3>
+        <p>Kategoria: Zdrowie</p>
+        <p>Data: 09.04.2026</p>
+        <p>At least 14 hours.</p>
+        <span class="badge done">Zakończone</span>
+    </div>
+    </section>
+</main>
+</body>
+
+
